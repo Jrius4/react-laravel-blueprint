@@ -31,6 +31,7 @@ class LoginController extends Controller
         $request->session()->regenerate();
 
         return redirect()->intended(AppServiceProvider::HOME);
+        // return redirect()->intended(route('dashboard'));
     }
 
     /**
@@ -44,6 +45,6 @@ class LoginController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect(route('dashboard'));
     }
 }
