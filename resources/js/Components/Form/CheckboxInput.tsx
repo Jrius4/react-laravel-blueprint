@@ -11,7 +11,7 @@ export function CheckboxInput({ label, name, ...props }: CheckboxInputProps) {
         id={name}
         name={name}
         type="checkbox"
-        className="mr-2 form-checkbox rounded text-indigo-600 focus:ring-indigo-600"
+        className="mr-2 form-checkbox rounded text-orange-600 focus:ring-orange-600"
         {...props}
       />
       <span className="text-sm">{label}</span>

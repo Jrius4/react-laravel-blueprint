@@ -31,11 +31,11 @@ const Create = () => {
       <h1 className="mb-8 text-3xl font-bold">
         <Link
           href={route('contacts')}
-          className="text-indigo-600 hover:text-indigo-700"
+          className="text-orange-600 hover:text-orange-700"
         >
           Contacts
         </Link>
-        <span className="font-medium text-indigo-600"> /</span> Create
+        <span className="font-medium text-orange-600"> /</span> Create
       </h1>
       <div className="max-w-3xl overflow-hidden bg-white rounded shadow">
         <form onSubmit={handleSubmit}>
@@ -159,7 +159,7 @@ const Create = () => {
             <LoadingButton
               loading={processing}
               type="submit"
-              className="btn-indigo"
+              className="btn-orange"
             >
               Create Contact
             </LoadingButton>

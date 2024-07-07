@@ -32,7 +32,7 @@ export default function FileInput({ name, error, onChange }: FileInputProps) {
 
   return (
     <div
-      className={`form-input w-full focus:outline-none focus:ring-1 focus:ring-indigo-400 focus:border-indigo-400 border-gray-300 rounded p-0 ${
+      className={`form-input w-full focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 border-gray-300 rounded p-0 ${
         error && 'border-red-400 focus:border-red-400 focus:ring-red-400'
       }`}
     >

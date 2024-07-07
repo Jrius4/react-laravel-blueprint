@@ -29,7 +29,7 @@ export default function ErrorPage({ status }: ErrorPageProps) {
   }[status];
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-5 text-indigo-100 bg-indigo-800">
+    <div className="flex items-center justify-center min-h-screen p-5 text-orange-100 bg-orange-800">
       <Head title={title} />
       <div className="w-full max-w-md">
         <h1 className="text-3xl">{title}</h1>

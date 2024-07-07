@@ -47,11 +47,11 @@ const Edit = () => {
       <h1 className="mb-8 text-3xl font-bold">
         <Link
           href={route('organizations')}
-          className="text-indigo-600 hover:text-indigo-700"
+          className="text-orange-600 hover:text-orange-700"
         >
           Organizations
         </Link>
-        <span className="mx-2 font-medium text-indigo-600">/</span>
+        <span className="mx-2 font-medium text-orange-600">/</span>
         {data.name}
       </h1>
       {organization.deleted_at && (
@@ -167,7 +167,7 @@ const Edit = () => {
             <LoadingButton
               loading={processing}
               type="submit"
-              className="ml-auto btn-indigo"
+              className="ml-auto btn-orange"
             >
               Update Organization
             </LoadingButton>

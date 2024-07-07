@@ -22,7 +22,7 @@ function Index() {
       <div className="flex items-center justify-between mb-6">
         <FilterBar />
         <Link
-          className="btn-indigo focus:outline-none"
+          className="btn-orange focus:outline-none"
           href={route('organizations.create')}
         >
           <span>Create</span>

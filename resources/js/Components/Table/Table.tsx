@@ -58,7 +58,7 @@ export default function Table<T>({
                       <Link
                         tabIndex={-1}
                         href={getRowDetailsUrl?.(row) as string}
-                        className="flex items-center px-6 py-4 focus:text-indigo focus:outline-none"
+                        className="flex items-center px-6 py-4 focus:text-orange focus:outline-none"
                       >
                         {column.renderCell?.(row) ??
                           get(row, column.name) ??

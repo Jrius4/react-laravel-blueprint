@@ -39,7 +39,7 @@ function PaginationItem({ active, label, url }: PaginationItem) {
       'border border-solid border-gray-300 rounded',
       'text-sm',
       'hover:bg-white',
-      'focus:outline-none focus:border-indigo-700 focus:text-indigo-700'
+      'focus:outline-none focus:border-orange-700 focus:text-orange-700'
     ],
     {
       'bg-white': active

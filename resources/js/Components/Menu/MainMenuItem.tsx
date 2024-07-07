@@ -12,12 +12,12 @@ export default function MainMenuItem({ icon, link, text }: MainMenuItemProps) {
 
   const iconClasses = classNames({
     'text-white': isActive,
-    'text-indigo-400 group-hover:text-white': !isActive
+    'text-orange-400 group-hover:text-white': !isActive
   });
 
   const textClasses = classNames({
     'text-white': isActive,
-    'text-indigo-200 group-hover:text-white': !isActive
+    'text-orange-200 group-hover:text-white': !isActive
   });
 
   return (

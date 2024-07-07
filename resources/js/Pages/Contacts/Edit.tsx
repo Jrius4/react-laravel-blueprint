@@ -52,11 +52,11 @@ const Edit = () => {
       <h1 className="mb-8 text-3xl font-bold">
         <Link
           href={route('contacts')}
-          className="text-indigo-600 hover:text-indigo-700"
+          className="text-orange-600 hover:text-orange-700"
         >
           Contacts
         </Link>
-        <span className="mx-2 font-medium text-indigo-600">/</span>
+        <span className="mx-2 font-medium text-orange-600">/</span>
         {data.first_name} {data.last_name}
       </h1>
       {contact.deleted_at && (
@@ -210,7 +210,7 @@ const Edit = () => {
             <LoadingButton
               loading={processing}
               type="submit"
-              className="ml-auto btn-indigo"
+              className="ml-auto btn-orange"
             >
               Update Contact
             </LoadingButton>

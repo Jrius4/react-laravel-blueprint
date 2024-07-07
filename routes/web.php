@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\OrganizationsController;
 use App\Http\Controllers\ReportsController;
@@ -20,6 +21,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//home
+
+Route::middleware('guest')->get('/', [HomeController::class,'home'])->name('home');
+
+// Contacts
+
 // Auth
 
 Route::get('login', [LoginController::class, 'create'])
@@ -35,7 +42,7 @@ Route::delete('logout', [LoginController::class, 'destroy'])
 
 // Dashboard
 
-Route::get('/', [DashboardController::class, 'index'])
+Route::get('/dashboard', [DashboardController::class, 'index'])
     ->name('dashboard')
     ->middleware('auth');
 

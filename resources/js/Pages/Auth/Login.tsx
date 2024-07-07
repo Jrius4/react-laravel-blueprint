@@ -21,7 +21,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-6 bg-indigo-900">
+    <div className="flex items-center justify-center min-h-screen p-6 bg-grey-900">
       <Head title="Login" />
 
       <div className="w-full max-w-md">
@@ -78,7 +78,7 @@ export default function LoginPage() {
             <LoadingButton
               type="submit"
               loading={processing}
-              className="btn-indigo"
+              className="btn-orange"
             >
               Login
             </LoadingButton>
